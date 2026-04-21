@@ -1,22 +1,22 @@
 # Zyengine
 
-High-performance Discord Gateway infrastructure utilizing a Go network bridge and a C++ rate-limiting core. This system is designed for extreme low-latency event processing in resource-constrained mobile terminal environments.
+High performance Discord Gateway infrastructure utilizing a Go network bridge and a C++ rate limiting core. This system is designed for extreme low-latency event 
 
 
 ## Features
 
- * **IPC-First Architecture**: Utilizes Unix Domain Sockets (AF_UNIX) for zero-latency communication between services.
+ * **IPC First Architecture**: Utilizes Unix Domain Sockets (AF_UNIX) for zero latency communication between services.
 
- * **Atomic Rate Limiting**: C++ core utilizes lock-free atomic operations (compare_exchange_weak) for high-concurrency state management.
+ * **Atomic Rate Limiting**: C++ core utilizes lock free atomic operations (compare_exchange_weak) for high concurrency state management.
 
- * **Multi-Language Interop**: Seamlessly bridges Go (Networking), C++ (Engine), and Python/JS (Workers).
+ * **Multi Language Interop**: Seamlessly bridges Go (Networking), C++ (Engine), and Python/JS (Workers).
 
 
 ## Directory Structure
 
- * engine/: Core C++ processing logic and rate-limiting system.
+ * engine/: Core C++ processing logic and rate limiting system.
 
- * Infra/: Go-based Discord Gateway bridge and TLS handlers.
+ * Infra/: Go-based Discord Gateway bridge and TLS handle3rs.
 
  * include/: Shared protocol headers and IPC packet definitions.
 
